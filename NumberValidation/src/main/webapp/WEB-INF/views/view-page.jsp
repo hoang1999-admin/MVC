@@ -1,11 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <!DOCTYPE html>
 <html>
 <head>
-
+<title>Đăng Kí</title>
 <style>
 .error {
 	color: red
@@ -14,13 +14,13 @@
 </head>
 <body>
 	<form:form action="helloagain" modelAttribute="emp">
-		Userame: <form:input path="name" />
+		Username: <form:input path="name" />
 		<br>
 		<br>
 		Password: <form:input path="pass" />
 		<br>
 		<br>
-		<form:errors path="pass" cssClass="error" />
+		<form:errors path="pass"  cssClass="error" />
 		<br>
 		<br>
 		Age: <form:input path="age" />
