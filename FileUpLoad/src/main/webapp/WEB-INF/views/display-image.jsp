@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>${filename }</h1>
-	<img alt=" hinh xe hoi" src="/resources/images/${filename }"/>
+	<img alt=" hinh xe hoi" src="resources/images/${filename }"/>
 	<h1>final</h1>
 </body>
 </html>

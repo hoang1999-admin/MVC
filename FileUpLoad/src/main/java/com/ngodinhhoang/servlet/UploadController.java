@@ -1,4 +1,6 @@
-package com.ngodinhhoang.servlet;import java.io.BufferedOutputStream;  
+package com.ngodinhhoang.servlet;
+
+import java.io.BufferedOutputStream;  
 import java.io.File;  
 import java.io.FileOutputStream;  
 import javax.servlet.ServletContext;  
@@ -12,7 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
   
 @Controller  
 public class UploadController {  
-    private static final String UPLOAD_DIRECTORY ="/resources/images";  
+    private static final String UPLOAD_DIRECTORY ="/images";  
       
     @RequestMapping("uploadform")  
     public ModelAndView uploadForm(){  
