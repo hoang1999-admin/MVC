@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.ngodinhhoang.model.Product;
+import com.ngodinhhoang.model.User;
 import com.ngodinhhoang.service.ProductService;
 
 
@@ -23,6 +24,8 @@ import com.ngodinhhoang.service.ProductService;
 public class HomeController {
 
 	private ProductService ProductService;
+	@SuppressWarnings("unused")
+	private com.ngodinhhoang.service.UserService UserService;
 
 //	@RequestMapping(value="/")
 //	public ModelAndView mainPage() {
@@ -49,4 +52,5 @@ public class HomeController {
 		model.addAttribute("latest_blog", this.ProductService.getProductLatest_Blog());
 		return "home/home";
 	}
+	
 }
