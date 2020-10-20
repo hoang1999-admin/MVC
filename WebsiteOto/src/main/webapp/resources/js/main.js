@@ -139,37 +139,37 @@
     rangeSlider.slider({
         range: true,
         min: 1,
-        max: 4000,
-        values: [800, 3200],
+        max: 1000000000,
+        values: [1, 10000],
         slide: function (event, ui) {
-            $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1] + ".100");
+            $("#amount").val("" + ui.values[0] + " - " + ui.values[1] + " vnd");
         }
     });
-    $("#amount").val("$" + $(".price-range").slider("values", 0) + " - $" + $(".price-range").slider("values", 1) + ".100");
+    $("#amount").val("" + $(".price-range").slider("values", 0) + " - " + $(".price-range").slider("values", 1) + "");
 
     var carSlider = $(".car-price-range");
     carSlider.slider({
         range: true,
         min: 1,
-        max: 4000,
-        values: [900, 3000],
+        max: 1000000000,
+        values: [1, 3000],
         slide: function (event, ui) {
-            $("#caramount").val("$" + ui.values[0] + " - $" + ui.values[1] + ".100");
+            $("#caramount").val("" + ui.values[0] + " - " + ui.values[1] + " vnd");
         }
     });
-    $("#caramount").val("$" + $(".car-price-range").slider("values", 0) + " - $" + $(".car-price-range").slider("values", 1) + ".100");
+    $("#caramount").val("" + $(".car-price-range").slider("values", 0) + " - " + $(".car-price-range").slider("values", 1) + "");
 
     var filterSlider = $(".filter-price-range");
     filterSlider.slider({
         range: true,
         min: 1,
-        max: 1200000,
+        max: 1000000000,
         values: [180000, 1000000],
         slide: function (event, ui) {
-            $("#filterAmount").val("[ " + "$" + ui.values[0] + " - $" + ui.values[1] + " ]");
+            $("#filterAmount").val("[ " + "" + ui.values[0] + " - " + ui.values[1] + " ]");
         }
     });
-    $("#filterAmount").val("[ " + "$" + $(".filter-price-range").slider("values", 0) + " - $" + $(".filter-price-range").slider("values", 1) + " ]");
+    $("#filterAmount").val("[ " + "" + $(".filter-price-range").slider("values", 0) + " - " + $(".filter-price-range").slider("values", 1) + " ]");
 
     /*--------------------------
         Select

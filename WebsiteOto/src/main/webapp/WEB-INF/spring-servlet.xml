@@ -42,7 +42,7 @@
 		<beans:property name="dataSource" ref="dataSource" />
 		<beans:property name="annotatedClasses">
 			<beans:list>
-				<beans:value>com.ngodinhhoang.model.Car</beans:value>
+				<beans:value>com.ngodinhhoang.model.Product</beans:value>
 			</beans:list>
 		</beans:property>
 		<beans:property name="hibernateProperties">
@@ -52,14 +52,14 @@
 			</beans:props>
 		</beans:property>
 	</beans:bean>
-	<beans:bean id="carDAO"
-		class="com.ngodinhhoang.dao.CarDAOImpl">
+	<beans:bean id="productDAO"
+		class="com.ngodinhhoang.dao.ProductDAOImpl">
 		<beans:property name="sessionFactory"
 			ref="hibernate4AnnotatedSessionFactory" />
 	</beans:bean>
-	<beans:bean id="carService"
-		class="com.ngodinhhoang.service.CarServiceImpl">
-		<beans:property name="carDAO" ref="carDAO" />
+	<beans:bean id="productService"
+		class="com.ngodinhhoang.service.ProductServiceImpl">
+		<beans:property name="productDAO" ref="productDAO" />
 	</beans:bean>
 	<context:component-scan
 		base-package="com.ngodinhhoang" />

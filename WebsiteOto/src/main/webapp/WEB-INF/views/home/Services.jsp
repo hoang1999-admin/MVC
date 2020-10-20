@@ -41,7 +41,7 @@
                     <div class="services__item">
                         <img src="resources/img/services/services-4.png" alt="">
                         <h5>Hỗ trợ 24/7</h5>
-                        <p>Phụ tùng linh kiện ô tô hiện đang sản xuất tại Việt Nam chủ yếu là các phụ tùng thâm dụng lao động, công nghệ giản đơn, như kính, săm…</p>
+                        <p>Phụ tùng linh kiện ô tô hiện đang sản xuất tại Việt Nam chủ yếu là các phụ tùng thâm dụng, công nghệ giản đơn, như kính, săm…</p>
                         <a href="#"><i class="fa fa-long-arrow-right"></i></a>
                     </div>
                 </div>

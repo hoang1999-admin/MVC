@@ -17,7 +17,7 @@
             <c:forEach var="product" items="${latest_blog}">
                 <div class="col-lg-4 col-md-6">
                     <div class="latest__blog__item">
-                        <div class="latest__blog__item__pic set-bg" data-setbg="${product.getImage()}">
+                        <div class="latest__blog__item__pic set-bg" data-setbg="${product.getImg()}">
                             <ul>
                                 <li>${product.getTitle()}</li>
                                 <li>${product.getYear()}</li>

@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-       <%@ taglib uri='http://java.sun.com/jsp/jstl/core' prefix='c'%>
+   
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -20,13 +20,6 @@
                                 <i class="fa fa-phone"></i>
                                 <span>(+84) 0865323066</span>
                             </div>
-                             <a href="${pageContext.request.contextPath }/admin">admin</a>
-                             <c:if test="${empty sessionScope.loginedUser}">
-     							<a href="${pageContext.request.contextPath}/login">Đăng Nhập</a>
-    							 </c:if>
-   								 |<c:if test="${not empty sessionScope.loginedUser}">
-  								 <a href="${pageContext.request.contextPath}/logout">Đăng Kí</a>
-  									  </c:if>
                             <div class="header__top__social">
                                 <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
                                 <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
@@ -42,7 +35,7 @@
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo">
-                        <a href="home/home.jsp"><img src="resources/img/logo.png" alt=""></a>
+                        <a href="../home/home.jsp"><img src="resources/img/logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-10">
@@ -50,17 +43,19 @@
                         <nav class="header__menu">
                             <ul>
                                 <li class="active"><a href="home/home.jsp">Trang Chủ</a></li>
-                                <li><a href="car/car.jsp">Ô Tô</a></li>
-                                <li><a href="blog/blog.jsp">Nhật Kí</a></li>
-                                <li><a href="home/Page_Preloder.jsp">Trang</a>
+                                <li><a href="../car/car.jsp">Ô Tô</a></li>
+                                <li><a href="../blog/blog.jsp">Nhật Kí</a></li>
+                                <li><a href="../home/Page_Preloder.jsp">Trang</a>
                                     <ul class="dropdown">
-                                        <li><a href="admins/about/about.jsp">Khoảng</a></li>
+                                   
+                                        <li><a href="about/about.jsp">Khoảng</a></li>
+                                       
                                         <li><a href="car_detail/car_detail.jsp">Chi Tiết Ô Tô</a></li>
                                         <li><a href="blog_detail/blog_detail.jsp">Chi Tiết Nhật Kí</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="about/about.jsp">Khoảng</a></li>
-                                <li><a href="contact/contact.jsp">Liên Hệ</a></li>
+                                <li><a href="../about/about.jsp">Khoảng</a></li>
+                                <li><a href="../contact/contact.jsp">Liên Hệ</a></li>
                             </ul>
                         </nav>
                         <div class="header__nav__widget">
@@ -68,7 +63,7 @@
                                 <a href="#"><i class="fa fa-cart-plus"></i></a>
                                 <a href="home/Search.jsp" class="search-switch"><i class="fa fa-search"></i></a>
                             </div>
-                            <a href="car_detail/car_detail.jsp" class="primary-btn">Thêm Xe</a>
+                            <a href="../car_detail/car_detail.jsp" class="primary-btn">Thêm Xe</a>
                         </div>
                     </div>
                 </div>

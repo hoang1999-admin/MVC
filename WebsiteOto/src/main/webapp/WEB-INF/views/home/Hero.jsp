@@ -4,8 +4,8 @@
             <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>     
 <!DOCTYPE html>
 <fmt:setLocale value = "vi_VN"/>
- <c:forEach var="carsList" items="${hero}">
- <section class="hero spad set-bg" data-setbg="${carsList.getImage()}">
+ <c:forEach var="product" items="${hero}">
+ <section class="hero spad set-bg" data-setbg="${product.getImg()}">
         <div class="container">
             <div class="row">
          
@@ -21,8 +21,8 @@
                             <div class="car-model">${product.getYear()}</div>
                             <h2><fmt:formatNumber value ="${product.getPrice()}"  type="number" maxIntegerDigits="14"/><span>/VND</span></h2>
                         </div>
-                        <a href="#" class="primary-btn"> Lái Thử</a>
-                        <a href="#" class="primary-btn more-btn">Tìm Hiểu Thêm</a>
+                        <a href="productblog?id=${product.getId()}" class="primary-btn"> Lái Thử</a>
+                        <a href="productblog?id=${product.getId()}" class="primary-btn more-btn">Tìm Hiểu Thêm</a>
                     </div>
                 </div>
                
@@ -30,10 +30,10 @@
                     <div class="hero__tab">
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Thuê Ô Tô</a>
+                                <a class="nav-link active" data-toggle="tab" href="product?id=${product.getId()}tabs-1" role="tab">Thuê Ô Tô</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Mua Ô Tô</a>
+                                <a class="nav-link" data-toggle="tab" href="product?id=${product.getId()}tabs-2" role="tab">Mua Ô Tô</a>
                             </li>
                         </ul>
                         <div class="tab-content">

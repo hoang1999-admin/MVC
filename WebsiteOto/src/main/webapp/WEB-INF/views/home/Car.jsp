@@ -23,10 +23,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 mix">
                     <div class="car__item">
                         <div class="car__item__pic__slider owl-carousel">
-                            <img src="${product.getImage()}" alt="">
-                            <img src="${product.getImage()}" alt="">
-                            <img src="${product.getImage()}" alt="">
-                            <img src="${product.getImage()}" alt="">
+                            <img src="${product.getImg()}" alt="">
+                            <img src="${product.getImg()}" alt="">
+                            <img src="${product.getImg()}" alt="">
+                            <img src="${product.getImg()}" alt="">
                         </div>
                         <div class="car__item__text">
                             <div class="car__item__text__inner">
@@ -50,10 +50,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 mix sale">
                     <div class="car__item">
                         <div class="car__item__pic__slider owl-carousel">
-                            <img src="${product.getImage()}" alt="">
-                            <img src="${product.getImage()}" alt="">
-                            <img src="${product.getImage()}" alt="">
-                            <img src="${product.getImage()}" alt="">
+                            <img src="${product.getImg()}" alt="">
+                            <img src="${product.getImg()}" alt="">
+                            <img src="${product.getImg()}" alt="">
+                            <img src="${product.getImg()}" alt="">
                         </div>
                         <div class="car__item__text">
                             <div class="car__item__text__inner">

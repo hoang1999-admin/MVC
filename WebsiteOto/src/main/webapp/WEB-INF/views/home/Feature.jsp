@@ -30,7 +30,7 @@
                         <div class="col-lg-6 col-md-4 col-6">
                             <div class="feature__item">
                                 <div class="feature__item__icon">
-                                    <img src="${product.getImage()}" alt="hình">
+                                    <img src="${product.getImg()}" alt="hình">
                                 </div>
                                 <h6>${product.getTitle()}</h6>
                             </div>

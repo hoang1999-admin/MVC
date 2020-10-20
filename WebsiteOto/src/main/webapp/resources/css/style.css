@@ -1,10 +1,10 @@
 /******************************************************************
-  Template Name: HVAC
+  Template Name: trang ô tô
   Description: HVAC Car Dealer HTML Template
-  Author: Colorlib
-  Author URI: https://www.colorlib.com
+  Author: Hoang bap
+  Author URI: https://www.hoangbap.com
   Version: 1.0
-  Created: Colorlib
+  Created: hoangbap
 ******************************************************************/
 
 /*------------------------------------------------------------------
@@ -25,16 +25,16 @@
 9.  Contact
 10.  Footer Style
 -------------------------------------------------------------------*/
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 /*----------------------------------------*/
 
 /* Template default CSS
 /*----------------------------------------*/
 
-html,
-body {
+html,body {
+	
 	height: 100%;
-	font-family: "Lato", sans-serif;
+	font-family: "Roboto", sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -47,7 +47,7 @@ h6 {
 	margin: 0;
 	color: #111111;
 	font-weight: 400;
-	font-family: "Lato", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -76,7 +76,7 @@ h6 {
 
 p {
 	font-size: 15px;
-	font-family: "Lato", sans-serif;
+	font-family: "Roboto", sans-serif;
 	color: #727171;
 	font-weight: 400;
 	line-height: 25px;
