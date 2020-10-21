@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.ngodinhhoang.model.Product;
-import com.ngodinhhoang.model.User;
 import com.ngodinhhoang.service.ProductService;
 
 

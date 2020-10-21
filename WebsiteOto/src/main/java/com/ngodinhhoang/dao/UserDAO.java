@@ -9,10 +9,10 @@ package com.ngodinhhoang.dao;
 
 import java.util.List;
 
-import com.ngodinhhoang.model.Product;
 import com.ngodinhhoang.model.User;
 
 public interface UserDAO {
 
-	public List<User> getProductUser();
+
+	public List<User> getUseradmin();
 }

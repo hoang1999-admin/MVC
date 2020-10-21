@@ -25,10 +25,9 @@ public class UserDAOImpl implements UserDAO{
 	public void setSessionFactory(SessionFactory sf) {
 		this.sessionFactory = sf;
 	}
-	
 	@SuppressWarnings("unchecked")
-
-	public List<User> getProductUser() {
+	@Override
+	public List<User> getUseradmin() {
 		Session session = this.sessionFactory.getCurrentSession();
 		List<User> usersList = session.createQuery("from User").list();
 		for (User u : usersList) {

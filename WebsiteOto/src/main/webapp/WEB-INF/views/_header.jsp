@@ -35,7 +35,7 @@
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo">
-                        <a href="../home/home.jsp"><img src="resources/img/logo.png" alt=""></a>
+                        <a href="/WEB-INF/views/home/home.jsp"><img src="resources/img/logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-10">
@@ -43,27 +43,27 @@
                         <nav class="header__menu">
                             <ul>
                                 <li class="active"><a href="home/home.jsp">Trang Chủ</a></li>
-                                <li><a href="../car/car.jsp">Ô Tô</a></li>
-                                <li><a href="../blog/blog.jsp">Nhật Kí</a></li>
-                                <li><a href="../home/Page_Preloder.jsp">Trang</a>
+                                <li><a href="/WEB-INF/views/car/car.jsp">Ô Tô</a></li>
+                                <li><a href="/WEB-INF/views/blog/blog.jsp">Nhật Kí</a></li>
+                                <li><a href="/WEB-INF/views/home/Page_Preloder.jsp">Trang</a>
                                     <ul class="dropdown">
                                    
                                         <li><a href="about/about.jsp">Khoảng</a></li>
                                        
-                                        <li><a href="car_detail/car_detail.jsp">Chi Tiết Ô Tô</a></li>
-                                        <li><a href="blog_detail/blog_detail.jsp">Chi Tiết Nhật Kí</a></li>
+                                        <li><a href="/WEB-INF/views/car_detail/car_detail.jsp">Chi Tiết Ô Tô</a></li>
+                                        <li><a href="/WEB-INF/views/blog_detail/blog_detail.jsp">Chi Tiết Nhật Kí</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="../about/about.jsp">Khoảng</a></li>
-                                <li><a href="../contact/contact.jsp">Liên Hệ</a></li>
+                                <li><a href="/WEB-INF/views/about/about.jsp">Khoảng</a></li>
+                                <li><a href="/WEB-INF/views/contact/contact.jsp">Liên Hệ</a></li>
                             </ul>
                         </nav>
                         <div class="header__nav__widget">
                             <div class="header__nav__widget__btn">
                                 <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                <a href="home/Search.jsp" class="search-switch"><i class="fa fa-search"></i></a>
+                                <a href="/WEB-INF/views/home/Search.jsp" class="search-switch"><i class="fa fa-search"></i></a>
                             </div>
-                            <a href="../car_detail/car_detail.jsp" class="primary-btn">Thêm Xe</a>
+                            <a href="/WEB-INF/views/car_detail/car_detail.jsp" class="primary-btn">Thêm Xe</a>
                         </div>
                     </div>
                 </div>

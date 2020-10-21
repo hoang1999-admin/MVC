@@ -16,7 +16,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import lombok.Data;
+
 
 
 @Entity
@@ -67,5 +67,30 @@ public void setPassword(String password) {
 	this.password = password;
 }
 
-   
+@Override
+public String toString() {
+	return "user_account [id=" + id + ", username=" + username + ", gender=" + gender +",password="+ password + " ]";
+}
+
+@Override
+public int hashCode() {
+	final int prime = 31;
+	long result = 1;
+	result = prime * result + id;
+	return (int) result;
+}
+
+public boolean equals(Object obj) {
+	if (this == obj)
+		return true;
+	if (obj == null)
+		return false;
+	if (getClass() != obj.getClass())
+		return false;
+	Product other = (Product) obj;
+	if (id != other.id)
+		return false;
+	return true;
+}
+
 }

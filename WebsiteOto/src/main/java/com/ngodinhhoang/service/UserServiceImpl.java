@@ -26,8 +26,8 @@ public class UserServiceImpl implements UserService{
 	@Transactional
 	
 	@Override
-	public List<User> getProductUser() {
-		return this.userDAO.getProductUser();
+	public List<User> getUseradmin() {
+		return this.userDAO.getUseradmin();
 	}
 	
 
