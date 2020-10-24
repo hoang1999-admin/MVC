@@ -31,7 +31,7 @@
                         <div class="car__item__text">
                             <div class="car__item__text__inner">
                                 <div class="label-date">${product.getYear()}</div>
-                                <h5><a href="product?id=${product.getId()}">${product.getTitle()}</a></h5>
+                                <h5><a href="<c:url value='/product/id=${product.id}'/>">${product.getTitle()}</a></h5>
                                 <ul>
                                     <li><span><fmt:formatNumber value ="${product.getMi()}"  type="number" maxIntegerDigits="14"/></span> mi</li>
                                     <li>${product.getAuto()}</li>
@@ -40,7 +40,7 @@
                             </div>
                             <div class="car__item__price">
                                 <span class="car-option">Cho Thuê</span>
-                                <h6><fmt:formatNumber value ="${product.getPrice()}"  type="number" maxIntegerDigits="14"/><span>/Tháng</span></h6>
+                                <h6><fmt:formatNumber value ="${product.getPrice()}"  type="number" maxIntegerDigits="14"/><span><sup>đ</sup></span></h6>
                             </div>
                         </div>
                     </div>
@@ -58,7 +58,7 @@
                         <div class="car__item__text">
                             <div class="car__item__text__inner">
                                 <div class="label-date">${product.getYear()}</div>
-                                <h5><a href="product?id=${product.getId()}">${product.getTitle()}</a></h5>
+                                <h5><a href="<c:url value='/product/id=${product.id}'/>">${product.getTitle()}</a></h5>
                                 <ul>
                                     <li><span><fmt:formatNumber value ="${product.getMi()}"  type="number" maxIntegerDigits="14"/></span> mi</li>
                                     <li>${product.getAuto()}</li>
@@ -67,7 +67,7 @@
                             </div>
                             <div class="car__item__price">
                                 <span class="car-option sale">Bán</span>
-                                <h6><fmt:formatNumber value ="${product.getPrice()}"  type="number" maxIntegerDigits="14"/><span>/Tháng</span></h6>
+                                <h6><fmt:formatNumber value ="${product.getPrice()}"  type="number" maxIntegerDigits="14"/><span><sup>đ</sup></span></h6>
                             </div>
                         </div>
                     </div>

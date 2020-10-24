@@ -20,5 +20,5 @@ public interface ProductService {
 	public List<Product> getProductCar1();
 	public List<Product> getProductCar2();
 	public List<Product> getProductLatest_Blog();
-
+	public Product getProductById(int id);
 }

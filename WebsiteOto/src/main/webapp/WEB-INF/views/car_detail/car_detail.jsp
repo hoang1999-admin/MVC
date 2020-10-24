@@ -17,15 +17,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
-<link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/font-awesome.min.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/elegant-icons.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/nice-select.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/magnific-popup.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/jquery-ui.min.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/owl.carousel.min.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/slicknav.min.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css" >
+<link rel="stylesheet" type="text/css" href="../resources/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/font-awesome.min.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/elegant-icons.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/nice-select.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/magnific-popup.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/jquery-ui.min.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/owl.carousel.min.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/slicknav.min.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/style.css" >
 </head>
 
 <body>
@@ -48,8 +48,8 @@
                     <div class="breadcrumb__text">
                         <h2>Porsche Cayenne Turbo S 2019</h2>
                         <div class="breadcrumb__links">
-                            <a href="home/home.jsp"><i class="fa fa-home"></i> Trang Chủ</a>
-                            <a href="home/car.jsp">Danh Sách Xe</a>
+                            <a href="/home"><i class="fa fa-home"></i> Trang Chủ</a>
+                            <a href="/car">Danh Sách Xe</a>
                             <span>Porsche cayenne turbo s</span>
                         </div>
                     </div>
@@ -69,16 +69,16 @@
                         </div>
                         <div class="car-thumbs">
                             <div class="car-thumbs-track car__thumb__slider owl-carousel">
-                                <div class="ct" data-imgbigurl="${product.getImg()}"><img
-                                        src="${product.getimg()}" alt=""></div>
-                                <div class="ct" data-imgbigurl="${product.getImg()}"><img
-                                        src="${product.getimg()}" alt=""></div>
-                                <div class="ct" data-imgbigurl="${product.getImg()}"><img
-                                        src="${product.getimg()}" alt=""></div>
-                                <div class="ct" data-imgbigurl="${product.getImg()}"><img
-                                        src="${product.getimg()}" alt=""></div>
-                                <div class="ct" data-imgbigurl="${product.getImg()}"><img
-                                        src="${product.getimg()}" alt=""></div>
+                                <div class="ct" data-imgbigurl="${product.getImg()}">
+                                <img src="${product.getImg()}" alt=""></div>
+                                <div class="ct" data-imgbigurl="${product.getImg()}">
+                                <img src="${product.getImg()}" alt=""></div>
+                                <div class="ct" data-imgbigurl="${product.getImg()}">
+                                <img src="${product.getImg()}" alt=""></div>
+                                <div class="ct" data-imgbigurl="${product.getImg()}">
+                                <img src="${product.getImg()}" alt=""></div>
+                                <div class="ct" data-imgbigurl="${product.getImg()}">
+                                <img src="${product.getImg()}" alt=""></div>
                             </div>
                         </div>
                     </div>
@@ -426,7 +426,7 @@
                         </div>
                         <div class="car__details__sidebar__payment">
                             <ul>
-                                <li>Giá Hiện Tại: <span><fmt:formatNumber value ="${product.getPriceNet()}"  type="number" maxIntegerDigits="14"/></span></li>
+                                <li>Giá Hiện Tại: <span><fmt:formatNumber value ="${product.getPricenet()}"  type="number" maxIntegerDigits="14"/></span></li>
                                 <li>Giảm Giá: <span><fmt:formatNumber value ="-${product.getDiscount()}" type="number" maxIntegerDigits="14"/></span> </li>
                                 <li>Giá: <span><fmt:formatNumber value ="${product.getPrice()}"  type="number" maxIntegerDigits="14"/></span></li>
                             </ul>
@@ -450,15 +450,15 @@
     <!-- Search End -->
 
     <!-- Js Plugins -->
-   <script src="resources/js/jquery-3.3.1.min.js"></script>
-    <script src="resources/js/bootstrap.min.js"></script>
-    <script src="resources/js/jquery.nice-select.min.js"></script>
-    <script src="resources/js/jquery-ui.min.js"></script>
-    <script src="resources/js/jquery.magnific-popup.min.js"></script>
-    <script src="resources/js/mixitup.min.js"></script>
-    <script src="resources/js/jquery.slicknav.js"></script>
-    <script src="resources/js/owl.carousel.min.js"></script>
-    <script src="resources/js/main.js"></script>
+   <script src="../resources/js/jquery-3.3.1.min.js"></script>
+    <script src="../resources/js/bootstrap.min.js"></script>
+    <script src="../resources/js/jquery.nice-select.min.js"></script>
+    <script src="../resources/js/jquery-ui.min.js"></script>
+    <script src="../resources/js/jquery.magnific-popup.min.js"></script>
+    <script src="../resources/js/mixitup.min.js"></script>
+    <script src="../resources/js/jquery.slicknav.js"></script>
+    <script src="../resources/js/owl.carousel.min.js"></script>
+    <script src="../resources/js/main.js"></script>
 </body>
 
 </html>

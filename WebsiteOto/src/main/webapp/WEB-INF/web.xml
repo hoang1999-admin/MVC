@@ -4,6 +4,15 @@
   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
   id="WebApp_ID"
   version="2.5">
+   <welcome-file-list>
+  <welcome-file>home</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
   <display-name>SpringMVC-JDBC</display-name>
   <servlet>
     <servlet-name>spring</servlet-name>
@@ -14,27 +23,10 @@
   <servlet-mapping>
     <servlet-name>spring</servlet-name>
     <url-pattern>/</url-pattern>
+   
   </servlet-mapping>
-  <servlet>
-    <servlet-name>user</servlet-name>
-    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-    <load-on-startup>1</load-on-startup>
-  </servlet>
+ 
   
-  <servlet-mapping>
-    <servlet-name>user</servlet-name>
-    <url-pattern>/user</url-pattern>
-  </servlet-mapping>
-   <servlet>
-    <servlet-name>blog_detail</servlet-name>
-    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-    <load-on-startup>1</load-on-startup>
-  </servlet>
-  
-  <servlet-mapping>
-    <servlet-name>blog_detail</servlet-name>
-    <url-pattern>/blog_detail</url-pattern>
-  </servlet-mapping>
   <servlet-mapping>
   <servlet-name>default</servlet-name>
   <url-pattern>*.jpg</url-pattern>

@@ -43,8 +43,8 @@
                         <nav class="header__menu">
                             <ul>
                                 <li class="active"><a href="home/home.jsp">Trang Chủ</a></li>
-                                <li><a href="/WEB-INF/views/car/car.jsp">Ô Tô</a></li>
-                                <li><a href="/WEB-INF/views/blog/blog.jsp">Nhật Kí</a></li>
+                                <li><a href="/car">Ô Tô</a></li>
+                                <li><a href="/blog">Nhật Kí</a></li>
                                 <li><a href="/WEB-INF/views/home/Page_Preloder.jsp">Trang</a>
                                     <ul class="dropdown">
                                    
@@ -54,8 +54,8 @@
                                         <li><a href="/WEB-INF/views/blog_detail/blog_detail.jsp">Chi Tiết Nhật Kí</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="/WEB-INF/views/about/about.jsp">Khoảng</a></li>
-                                <li><a href="/WEB-INF/views/contact/contact.jsp">Liên Hệ</a></li>
+                                <li><a href="/about">Khoảng</a></li>
+                                <li><a href="/contact">Liên Hệ</a></li>
                             </ul>
                         </nav>
                         <div class="header__nav__widget">

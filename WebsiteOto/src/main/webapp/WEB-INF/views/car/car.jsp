@@ -17,15 +17,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
-<link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/font-awesome.min.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/elegant-icons.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/nice-select.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/magnific-popup.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/jquery-ui.min.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/owl.carousel.min.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/slicknav.min.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css" >
+<link rel="stylesheet" type="text/css" href="../resources/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/font-awesome.min.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/elegant-icons.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/nice-select.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/magnific-popup.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/jquery-ui.min.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/owl.carousel.min.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/slicknav.min.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/style.css" >
 </head>
 
 <body>
@@ -38,6 +38,7 @@
 
     <!-- Header Section Begin -->
      <jsp:include page="/WEB-INF/views/_header.jsp"></jsp:include>
+      
     <!-- Header Section End -->
     <!-- Breadcrumb Begin -->
     <div class="breadcrumb-option set-bg" data-setbg="${product.getImg()}">
@@ -169,10 +170,10 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="car__item">
                                 <div class="car__item__pic__slider owl-carousel">
-                                    <img src="resources/img/cars/car-1.jpg" alt="">
-                                    <img src="resources/img/cars/car-8.jpg" alt="">
-                                    <img src="resources/img/cars/car-6.jpg" alt="">
-                                    <img src="resources/img/cars/car-3.jpg" alt="">
+                                    <img src="../resources/img/cars/car-1.jpg" alt="">
+                                    <img src="../resources/img/cars/car-8.jpg" alt="">
+                                    <img src="../resources/img/cars/car-6.jpg" alt="">
+                                    <img src="../resources/img/cars/car-3.jpg" alt="">
                                 </div>
                                 <div class="car__item__text">
                                     <div class="car__item__text__inner">
@@ -194,10 +195,10 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="car__item">
                                 <div class="car__item__pic__slider owl-carousel">
-                                    <img src="resources/img/cars/car-2.jpg" alt="">
-                                    <img src="resources/img/cars/car-8.jpg" alt="">
-                                    <img src="resources/img/cars/car-6.jpg" alt="">
-                                    <img src="resources/img/cars/car-4.jpg" alt="">
+                                    <img src="../resources/img/cars/car-2.jpg" alt="">
+                                    <img src="../resources/img/cars/car-8.jpg" alt="">
+                                    <img src="../resources/img/cars/car-6.jpg" alt="">
+                                    <img src="../resources/img/cars/car-4.jpg" alt="">
                                 </div>
                                 <div class="car__item__text">
                                     <div class="car__item__text__inner">
@@ -219,10 +220,10 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="car__item">
                                 <div class="car__item__pic__slider owl-carousel">
-                                    <img src="resources/img/cars/car-3.jpg" alt="">
-                                    <img src="resources/img/cars/car-8.jpg" alt="">
-                                    <img src="resources/img/cars/car-6.jpg" alt="">
-                                    <img src="resources/img/cars/car-5.jpg" alt="">
+                                    <img src="../resources/img/cars/car-3.jpg" alt="">
+                                    <img src="../resources/img/cars/car-8.jpg" alt="">
+                                    <img src="../resources/img/cars/car-6.jpg" alt="">
+                                    <img src="../resources/img/cars/car-5.jpg" alt="">
                                 </div>
                                 <div class="car__item__text">
                                      <div class="car__item__text__inner">
@@ -244,10 +245,10 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="car__item">
                                 <div class="car__item__pic__slider owl-carousel">
-                                    <img src="resources/img/cars/car-5.jpg" alt="">
-                                    <img src="resources/img/cars/car-8.jpg" alt="">
-                                    <img src="resources/img/cars/car-7.jpg" alt="">
-                                    <img src="resources/img/cars/car-2.jpg" alt="">
+                                    <img src="../resources/img/cars/car-5.jpg" alt="">
+                                    <img src="../resources/img/cars/car-8.jpg" alt="">
+                                    <img src="../resources/img/cars/car-7.jpg" alt="">
+                                    <img src="../resources/img/cars/car-2.jpg" alt="">
                                 </div>
                                 <div class="car__item__text">
                                     <div class="car__item__text__inner">
@@ -269,10 +270,10 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="car__item">
                                 <div class="car__item__pic__slider owl-carousel">
-                                    <img src="resources/img/cars/car-6.jpg" alt="">
-                                    <img src="resources/img/cars/car-8.jpg" alt="">
-                                    <img src="resources/img/cars/car-3.jpg" alt="">
-                                    <img src="resources/img/cars/car-1.jpg" alt="">
+                                    <img src="../resources/img/cars/car-6.jpg" alt="">
+                                    <img src="../resources/img/cars/car-8.jpg" alt="">
+                                    <img src="../resources/img/cars/car-3.jpg" alt="">
+                                    <img src="../resources/img/cars/car-1.jpg" alt="">
                                 </div>
                                 <div class="car__item__text">
                                      <div class="car__item__text__inner">
@@ -294,10 +295,10 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="car__item">
                                 <div class="car__item__pic__slider owl-carousel">
-                                    <img src="resources/img/cars/car-4.jpg" alt="">
-                                    <img src="resources/img/cars/car-8.jpg" alt="">
-                                    <img src="resources/img/cars/car-2.jpg" alt="">
-                                    <img src="resources/img/cars/car-1.jpg" alt="">
+                                    <img src="../resources/img/cars/car-4.jpg" alt="">
+                                    <img src="../resources/img/cars/car-8.jpg" alt="">
+                                    <img src="../resources/img/cars/car-2.jpg" alt="">
+                                    <img src="../resources/img/cars/car-1.jpg" alt="">
                                 </div>
                                 <div class="car__item__text">
                                     <div class="car__item__text__inner">
@@ -319,10 +320,10 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="car__item">
                                 <div class="car__item__pic__slider owl-carousel">
-                                    <img src="resources/img/cars/car-7.jpg" alt="">
-                                    <img src="resources/img/cars/car-2.jpg" alt="">
-                                    <img src="resources/img/cars/car-4.jpg" alt="">
-                                    <img src="resources/img/cars/car-1.jpg" alt="">
+                                    <img src="../resources/img/cars/car-7.jpg" alt="">
+                                    <img src="../resources/img/cars/car-2.jpg" alt="">
+                                    <img src="../resources/img/cars/car-4.jpg" alt="">
+                                    <img src="../resources/img/cars/car-1.jpg" alt="">
                                 </div>
                                 <div class="car__item__text">
                                     <div class="car__item__text__inner">
@@ -344,10 +345,10 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="car__item">
                                 <div class="car__item__pic__slider owl-carousel">
-                                    <img src="resources/img/cars/car-8.jpg" alt="">
-                                    <img src="resources/img/cars/car-3.jpg" alt="">
-                                    <img src="resources/img/cars/car-5.jpg" alt="">
-                                    <img src="resources/img/cars/car-2.jpg" alt="">
+                                    <img src="../resources/img/cars/car-8.jpg" alt="">
+                                    <img src="../resources/img/cars/car-3.jpg" alt="">
+                                    <img src="../resources/img/cars/car-5.jpg" alt="">
+                                    <img src="../resources/img/cars/car-2.jpg" alt="">
                                 </div>
                                 <div class="car__item__text">
                                     <div class="car__item__text__inner">
@@ -369,10 +370,10 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="car__item">
                                 <div class="car__item__pic__slider owl-carousel">
-                                    <img src="resources/img/cars/car-8.jpg" alt="">
-                                    <img src="resources/img/cars/car-3.jpg" alt="">
-                                    <img src="resources/img/cars/car-5.jpg" alt="">
-                                    <img src="resources/img/cars/car-2.jpg" alt="">
+                                    <img src="../resources/img/cars/car-8.jpg" alt="">
+                                    <img src="../resources/img/cars/car-3.jpg" alt="">
+                                    <img src="../resources/img/cars/car-5.jpg" alt="">
+                                    <img src="../resources/img/cars/car-2.jpg" alt="">
                                 </div>
                                 <div class="car__item__text">
                                     <div class="car__item__text__inner">
@@ -413,15 +414,15 @@
     <!-- Search End -->
 
     <!-- Js Plugins -->
-   <script src="resources/js/jquery-3.3.1.min.js"></script>
-    <script src="resources/js/bootstrap.min.js"></script>
-    <script src="resources/js/jquery.nice-select.min.js"></script>
-    <script src="resources/js/jquery-ui.min.js"></script>
-    <script src="resources/js/jquery.magnific-popup.min.js"></script>
-    <script src="resources/js/mixitup.min.js"></script>
-    <script src="resources/js/jquery.slicknav.js"></script>
-    <script src="resources/js/owl.carousel.min.js"></script>
-    <script src="resources/js/main.js"></script>
+   <script src="../resources/js/jquery-3.3.1.min.js"></script>
+    <script src="../resources/js/bootstrap.min.js"></script>
+    <script src="../resources/js/jquery.nice-select.min.js"></script>
+    <script src="../resources/js/jquery-ui.min.js"></script>
+    <script src="../resources/js/jquery.magnific-popup.min.js"></script>
+    <script src="../resources/js/mixitup.min.js"></script>
+    <script src="../resources/js/jquery.slicknav.js"></script>
+    <script src="../resources/js/owl.carousel.min.js"></script>
+    <script src="../resources/js/main.js"></script>
 </body>
 
 </html>

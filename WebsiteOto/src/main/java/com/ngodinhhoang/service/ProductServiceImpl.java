@@ -56,5 +56,10 @@ public class ProductServiceImpl implements ProductService{
 		return this.productDAO.getProductLatest_Blog();
 
 	}
+	@Transactional
+	@Override
+	public Product getProductById(int id) {
+		return this.productDAO.getProductById(id);
+	}
 
 }

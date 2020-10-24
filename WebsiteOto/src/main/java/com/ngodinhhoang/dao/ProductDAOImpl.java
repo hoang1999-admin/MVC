@@ -92,4 +92,12 @@ public class ProductDAOImpl implements ProductDAO {
 		}
 		return productsList;
 	}
+
+	@Override
+	public Product getProductById(int id) {
+		org.hibernate.Session session = this.sessionFactory.getCurrentSession();
+		Product p = (Product) session.load(Product.class, new Integer(id));
+		logger.info("Product loaded successfully, Product details=" + p);
+		return p;
+	}
 }
