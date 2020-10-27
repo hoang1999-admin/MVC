@@ -9,7 +9,6 @@ package com.ngodinhhoang.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 
@@ -21,39 +20,43 @@ public class HomeController {
 	public ModelAndView mainPage() {
 	return new ModelAndView("home/home");
 	}
-	@RequestMapping(value="/index")
-	public ModelAndView indexPage() {
+	
+	@RequestMapping(value="/car")
+	public ModelAndView carpage() {
+	return new ModelAndView("car/car");
+	}
+	@RequestMapping(value="/home")
+	public ModelAndView homepage() {
 	return new ModelAndView("home/home");
 	}
-	
 	@RequestMapping(value="/about")
-	public String aboutPage(){
-		
-		return "about/about";
-	}
-	@RequestMapping(value="/blog")
-	public String blogPage(){
-		
-		return "blog/blog";
+	public ModelAndView aboutpage() {
+	return new ModelAndView("about/about");
 	}
 	@RequestMapping(value="/car_detail")
-	public String car_detail(){
-		
-		return "car_detail/car_detail";
+	public ModelAndView cardetailpage() {
+	return new ModelAndView("car_detail/car_detail");
 	}
-	@RequestMapping(value="/car")
-	public String car(){
-		
-		return "car/car";
+
+	@RequestMapping(value="/contact")
+	public ModelAndView contactpage() {
+	return new ModelAndView("contact/contact");
 	}
 	@RequestMapping(value="/blog_detail")
-	public String blog_detail(){
-		
-		return "blog_detail/blog_detail";
+	public ModelAndView blogdetailpage() {
+	return new ModelAndView("blog_detail/blog_detail");
 	}
-	 @RequestMapping(value="/contact",method=RequestMethod.GET)
-	  	public String contact(){
-	  		
-	  		return "contact/contact";
-	  	}
+	@RequestMapping(value="/blog")
+	public ModelAndView blogpage() {
+	return new ModelAndView("blog/blog");
+	}
+	@RequestMapping(value="/search")
+	public ModelAndView searchpage() {
+	return new ModelAndView("home/Search");
+	}
+	@RequestMapping(value="/page_preloder")
+	public ModelAndView page_preloder() {
+	return new ModelAndView("home/Page_Preloder");
+	}
+	
 }

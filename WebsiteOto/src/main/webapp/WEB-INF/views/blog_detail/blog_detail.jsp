@@ -11,21 +11,21 @@
     <meta name="keywords" content="HVAC, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HVAC</title>
+    <title>Blog</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
-<link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/font-awesome.min.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/elegant-icons.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/nice-select.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/magnific-popup.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/jquery-ui.min.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/owl.carousel.min.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/slicknav.min.css" >
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css" >
+<link rel="stylesheet" type="text/css" href="../resources/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/font-awesome.min.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/elegant-icons.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/nice-select.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/magnific-popup.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/jquery-ui.min.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/owl.carousel.min.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/slicknav.min.css" >
+    <link rel="stylesheet" type="text/css" href="../resources/css/style.css" >
 </head>
 
 <body>
@@ -202,15 +202,15 @@
     <!-- Search End -->
 
     <!-- Js Plugins -->
-   <script src="resources/js/jquery-3.3.1.min.js"></script>
-    <script src="resources/js/bootstrap.min.js"></script>
-    <script src="resources/js/jquery.nice-select.min.js"></script>
-    <script src="resources/js/jquery-ui.min.js"></script>
-    <script src="resources/js/jquery.magnific-popup.min.js"></script>
-    <script src="resources/js/mixitup.min.js"></script>
-    <script src="resources/js/jquery.slicknav.js"></script>
-    <script src="resources/js/owl.carousel.min.js"></script>
-    <script src="resources/js/main.js"></script>
+   <script src="../resources/js/jquery-3.3.1.min.js"></script>
+    <script src="../resources/js/bootstrap.min.js"></script>
+    <script src="../resources/js/jquery.nice-select.min.js"></script>
+    <script src="../resources/js/jquery-ui.min.js"></script>
+    <script src="../resources/js/jquery.magnific-popup.min.js"></script>
+    <script src="../resources/js/mixitup.min.js"></script>
+    <script src="../resources/js/jquery.slicknav.js"></script>
+    <script src="../resources/js/owl.carousel.min.js"></script>
+    <script src="../resources/js/main.js"></script>
 </body>
 
 </html>

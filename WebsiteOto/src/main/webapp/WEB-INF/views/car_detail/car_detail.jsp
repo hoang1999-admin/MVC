@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
      <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %> 
+   <%@ taglib  uri = "http://java.sun.com/jsp/jstl/core"  prefix = "c"%>
 <!DOCTYPE html>
  <fmt:setLocale value = "vi_VN"/>
 <html lang="en">
@@ -11,7 +12,7 @@
     <meta name="keywords" content="HVAC, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HVAC</title>
+    <title>${product.getTitle()}</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -48,9 +49,9 @@
                     <div class="breadcrumb__text">
                         <h2>Porsche Cayenne Turbo S 2019</h2>
                         <div class="breadcrumb__links">
-                            <a href="/home"><i class="fa fa-home"></i> Trang Chủ</a>
-                            <a href="/car">Danh Sách Xe</a>
-                            <span>Porsche cayenne turbo s</span>
+                            <a href="<c:url value='/home'/>"><i class="fa fa-home"></i> Trang Chủ</a>
+                            <a href="<c:url value='/car'/>">Danh Sách Xe</a>
+                            <span>${product.getTitle()}</span>
                         </div>
                     </div>
                 </div>

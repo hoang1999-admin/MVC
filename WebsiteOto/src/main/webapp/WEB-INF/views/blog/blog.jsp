@@ -37,7 +37,7 @@
      <jsp:include page="/WEB-INF/views/_header.jsp"></jsp:include>
     <!-- Header Section End -->
     <!-- Breadcrumb Begin -->
-    <div class="breadcrumb-option set-bg" data-setbg="${product.getImg()}">
+    <div class="breadcrumb-option set-bg" data-setbg="resources/img/hero-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -45,7 +45,7 @@
                         <h2>Porsche Cayenne Turbo S 2019</h2>
                         <div class="breadcrumb__links">
                             <a href="../home.jsp"><i class="fa fa-home"></i> Trang Chủ</a>
-                            <a href="../car.jsp">Danh Sách Xe</a>
+                            <a href="../car.jsp">Nhật Kí</a>
                             <span>Porsche cayenne turbo s</span>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="blog__item">
-                                <div class="blog__item__pic set-bg" data-setbg="${product.getImg()}">
+                                <div class="blog__item__pic set-bg" data-setbg="resources/img/blog/blog-1.jpg">
                                     <ul>
                                         <li>${product.getTitle()}</li>
                                         <li>${product.getYear()}</li>
@@ -77,7 +77,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="blog__item">
-                                <div class="blog__item__pic set-bg" data-setbg="${product.getImg()}">
+                                <div class="blog__item__pic set-bg" data-setbg="resources/img/blog/blog-2.jpg">
                                     <ul>
                                         <li>${product.getTitle()}</li>
                                         <li>${product.getYear()}</li>
@@ -92,7 +92,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="blog__item">
-                                <div class="blog__item__pic set-bg" data-setbg="${product.getImg()}">
+                                <div class="blog__item__pic set-bg" data-setbg="resources/img/blog/blog-3.jpg">
                                     <ul>
                                        <li>${product.getTitle()}</li>
                                         <li>${product.getYear()}</li>
@@ -107,7 +107,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="blog__item">
-                                <div class="blog__item__pic set-bg" data-setbg="${product.getImg()}">
+                                <div class="blog__item__pic set-bg" data-setbg="resources/img/blog/blog-4.jpg">
                                     <ul>
                                         <li>${product.getTitle()}</li>
                                         <li>${product.getYear()}</li>
@@ -122,7 +122,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="blog__item">
-                                <div class="blog__item__pic set-bg" data-setbg="${product.getImg()}">
+                                <div class="blog__item__pic set-bg" data-setbg="resources/img/blog/blog-5.jpg">
                                     <ul>
                                         <li>${product.getTitle()}</li>
                                         <li>${product.getYear()}</li>
@@ -137,7 +137,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="blog__item">
-                                <div class="blog__item__pic set-bg" data-setbg="${product.getImg()}">
+                                <div class="blog__item__pic set-bg" data-setbg="resources/img/blog/blog-6.jpg">
                                     <ul>
                                         <li>${product.getTitle()}</li>
                                         <li>${product.getYear()}</li>

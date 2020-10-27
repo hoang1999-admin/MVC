@@ -40,7 +40,7 @@
      <jsp:include page="/WEB-INF/views/_header.jsp"></jsp:include>
     <!-- Header Section End -->
     <!-- Breadcrumb Begin -->
-    <div class="breadcrumb-option set-bg" data-setbg="${product.getImg()}">
+    <div class="breadcrumb-option set-bg" data-setbg="resources/img/hero-bg.jpg" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -48,8 +48,8 @@
                         <h2>Porsche Cayenne Turbo S 2019</h2>
                         <div class="breadcrumb__links">
                             <a href="../home.jsp"><i class="fa fa-home"></i> Trang Chủ</a>
-                            <a href="#">Danh Sách Xe</a>
-                            <span>Porsche cayenne turbo s</span>
+                            <a href="#">Liên Hệ</a>
+                            <span>${product.getTitle()}</span>
                         </div>
                     </div>
                 </div>

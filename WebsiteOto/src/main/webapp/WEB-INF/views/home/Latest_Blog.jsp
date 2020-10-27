@@ -27,7 +27,7 @@
                         <div class="latest__blog__item__text">
                             <h5>${product.getBrand()}</h5>
                             <p>${product.getDescription()}</p>
-                            <a href="${pageContext.request.contextPath}/productblog?id=${product.getId()}">Xem Thêm <i class="fa fa-long-arrow-right"></i></a>
+                            <a href="<c:url value='/productblog/id=${product.id}'/>">Xem Thêm <i class="fa fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>

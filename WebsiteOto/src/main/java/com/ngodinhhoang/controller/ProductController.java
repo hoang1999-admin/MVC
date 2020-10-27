@@ -45,9 +45,9 @@ public class ProductController {
 	@RequestMapping("/product/id={id}")
 	public String Product(@PathVariable("id") int id, Model model) {
 	model.addAttribute("product", this.productService.getProductById(id));
-	return "car/car";
+	return "car_detail/car_detail";
 	}
-	@RequestMapping("/productblog/{id}")
+	@RequestMapping("/productblog/id={id}")
 	public String ProductBlog(@PathVariable("id") int id, Model model) {
 	model.addAttribute("productblog", this.productService.getProductById(id));
 	return "blog_detail/blog_detail";

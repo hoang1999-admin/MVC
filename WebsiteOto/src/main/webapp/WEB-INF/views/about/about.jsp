@@ -11,7 +11,7 @@
     <meta name="keywords" content="HVAC, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HVAC</title>
+    <title>Khoảng</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -40,7 +40,7 @@
      <jsp:include page="/WEB-INF/views/_header.jsp"></jsp:include>
     <!-- Header Section End -->
     <!-- Breadcrumb Begin -->
-    <div class="breadcrumb-option set-bg" data-setbg="${product.getImg()}">
+    <div class="breadcrumb-option set-bg" data-setbg="resources/img/about/call-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -48,8 +48,8 @@
                         <h2>Porsche Cayenne Turbo S 2019</h2>
                         <div class="breadcrumb__links">
                             <a href="/home/home.jsp"><i class="fa fa-home"></i> Trang Chủ</a>
-                            <a href="/home/car.jsp">Danh Sách Xe</a>
-                            <span>Porsche cayenne turbo s</span>
+                            <a href="#">Khoảng</a>
+                            <span>${product.Title()}</span>
                         </div>
                     </div>
                 </div>
