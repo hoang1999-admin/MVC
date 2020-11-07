@@ -23,10 +23,13 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 mix">
                     <div class="car__item">
                         <div class="car__item__pic__slider owl-carousel">
-                            <img src="${product.getImg()}" alt="">
-                            <img src="${product.getImg()}" alt="">
-                            <img src="${product.getImg()}" alt="">
-                            <img src="${product.getImg()}" alt="">
+                            <img src="${product.getImg()}" alt="">               
+                                    <img src="resources/img/cars/car-5.jpg" alt="">
+                                    <img src="resources/img/cars/car-2.jpg" alt="">
+                                     <img src="resources/img/cars/car-1.jpg" alt="">
+                                    <img src="resources/img/cars/car-8.jpg" alt="">
+                                    <img src="resources/img/cars/car-6.jpg" alt="">
+                                    <img src="resources/img/cars/car-3.jpg" alt="">
                         </div>
                         <div class="car__item__text">
                             <div class="car__item__text__inner">
@@ -39,7 +42,7 @@
                                 </ul>
                             </div>
                             <div class="car__item__price">
-                                <span class="car-option">Cho Thuê</span>
+                              <h5> <a href="<c:url value="/AddCart/id=${product.id }"/>"> <span class="car-option">Cho Thuê</span></a></h5>
                                 <h6><fmt:formatNumber value ="${product.getPrice()}"  type="number" maxIntegerDigits="14"/><span><sup>đ</sup></span></h6>
                             </div>
                         </div>
@@ -50,10 +53,15 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 mix sale">
                     <div class="car__item">
                         <div class="car__item__pic__slider owl-carousel">
-                            <img src="${product.getImg()}" alt="">
-                            <img src="${product.getImg()}" alt="">
-                            <img src="${product.getImg()}" alt="">
-                            <img src="${product.getImg()}" alt="">
+                            <img src="${product.getImg()}" alt="">                  
+                                    <img src="resources/img/cars/car-3.jpg" alt="">
+                                    <img src="resources/img/cars/car-5.jpg" alt="">
+                                    <img src="resources/img/cars/car-2.jpg" alt="">
+                                     <img src="resources/img/cars/car-1.jpg" alt="">
+                                    <img src="resources/img/cars/car-8.jpg" alt="">
+                                    <img src="resources/img/cars/car-6.jpg" alt="">
+                                    <img src="resources/img/cars/car-3.jpg" alt="">
+                                   
                         </div>
                         <div class="car__item__text">
                             <div class="car__item__text__inner">
@@ -66,7 +74,7 @@
                                 </ul>
                             </div>
                             <div class="car__item__price">
-                                <span class="car-option sale">Bán</span>
+                              <h5> <a href="<c:url value="/AddCart/id=${product.id }"/>">  <span class="car-option sale">Bán</span></a></h5>
                                 <h6><fmt:formatNumber value ="${product.getPrice()}"  type="number" maxIntegerDigits="14"/><span><sup>đ</sup></span></h6>
                             </div>
                         </div>
@@ -74,6 +82,7 @@
                 </div>
                 </c:forEach>
             </div>
+        
         </div>
     </section>
     

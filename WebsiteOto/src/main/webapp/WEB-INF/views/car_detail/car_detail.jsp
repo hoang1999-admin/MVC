@@ -38,11 +38,80 @@
     <!-- Offcanvas Menu End -->
 
     <!-- Header Section Begin -->
-     <jsp:include page="/WEB-INF/views/_header.jsp"></jsp:include>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ul class="header__top__widget">
+                            <li><i class="fa fa-clock-o"></i> Ngày Trong Tuần : 8h Đến 18h</li>
+                            <li><i class="fa fa-envelope-o"></i><a href="https://mail.google.com/" class="email"> ngodinhhoang1999@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="header__top__right">
+                            <div class="header__top__phone">
+                                <i class="fa fa-phone"></i>
+                                <span>(+84) 0865323066</span>
+                            </div>
+                            <div class="header__top__social">
+                                <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+                                <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.google.com.vn"><i class="fa fa-google"></i></a>
+                                <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="<c:url value='/home'/>"><img src="../resources/img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav">
+                        <nav class="header__menu">
+                            <ul>
+                                <li class="active"><a href="<c:url value='/home'/>">Trang Chủ</a></li>
+                                <li><a href="<c:url value='/car'/>">Ô Tô</a></li>
+                                <li><a href="<c:url value='/blog'/>">Nhật Kí</a></li>
+                                <li><a href="<c:url value='#'/>">Trang</a>
+                                    <ul class="dropdown">
+                                   
+                                        <li><a href="<c:url value='about'/>">Khoảng</a></li>
+                                       
+                                        <li><a href="<c:url value='/car_detail'/>">Chi Tiết Ô Tô</a></li>
+                                        <li><a href="<c:url value='/blog_detail'/>">Chi Tiết Nhật Kí</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="<c:url value='/about'/>">Khoảng</a></li>
+                                <li><a href="<c:url value='/contact'/>">Liên Hệ</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__nav__widget">
+                            <div class="header__nav__widget__btn">
+                                <a href="<c:url value="/cart"/>"><i class="fa fa-cart-plus"></i><span><sup>${Total_Quanty_Cart}</sup></span></a>
+                                <a href="<c:url value='/search'/>" class="search-switch"><i class="fa fa-search"></i></a>
+                            </div>
+                            <a href="<c:url value='/car_detail'/>" class="primary-btn">Thêm Xe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+ 
     <!-- Header Section End -->
 
     <!-- Breadcrumb Begin -->
-    <div class="breadcrumb-option set-bg" data-setbg="${product.getImg()}">
+    <div class="breadcrumb-option set-bg" data-setbg="../${product.getImg()}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -66,20 +135,20 @@
                 <div class="col-lg-9">
                     <div class="car__details__pic">
                         <div class="car__details__pic__large">
-                            <img class="car-big-img" src="${product.getImg()}" alt="">
+                            <img class="car-big-img" src="../${product.getImg()}" alt="">
                         </div>
                         <div class="car-thumbs">
                             <div class="car-thumbs-track car__thumb__slider owl-carousel">
-                                <div class="ct" data-imgbigurl="${product.getImg()}">
-                                <img src="${product.getImg()}" alt=""></div>
-                                <div class="ct" data-imgbigurl="${product.getImg()}">
-                                <img src="${product.getImg()}" alt=""></div>
-                                <div class="ct" data-imgbigurl="${product.getImg()}">
-                                <img src="${product.getImg()}" alt=""></div>
-                                <div class="ct" data-imgbigurl="${product.getImg()}">
-                                <img src="${product.getImg()}" alt=""></div>
-                                <div class="ct" data-imgbigurl="${product.getImg()}">
-                                <img src="${product.getImg()}" alt=""></div>
+                                <div class="ct" data-imgbigurl="../${product.getImg()}">
+                                <img src="../${product.getImg()}" alt=""></div>
+                                <div class="ct" data-imgbigurl="../${product.getImg()}">
+                                <img src="../${product.getImg()}" alt=""></div>
+                                <div class="ct" data-imgbigurl="../${product.getImg()}">
+                                <img src="../${product.getImg()}" alt=""></div>
+                                <div class="ct" data-imgbigurl="../${product.getImg()}">
+                                <img src="../${product.getImg()}" alt=""></div>
+                                <div class="ct" data-imgbigurl="../${product.getImg()}">
+                                <img src="../${product.getImg()}" alt=""></div>
                             </div>
                         </div>
                     </div>
@@ -431,10 +500,12 @@
                                 <li>Giảm Giá: <span><fmt:formatNumber value ="-${product.getDiscount()}" type="number" maxIntegerDigits="14"/></span> </li>
                                 <li>Giá: <span><fmt:formatNumber value ="${product.getPrice()}"  type="number" maxIntegerDigits="14"/></span></li>
                             </ul>
-                            <a href="#" class="primary-btn"><i class="fa fa-credit-card"></i> Mua Nhanh</a>
-                            <a href="#" class="primary-btn sidebar-btn"><i class="fa fa-sliders"></i> Thanh Toán</a>
+                            <a href="<c:url value="/AddCart/id=${product.id }"/>" class="primary-btn"><i class="fa fa-credit-card"></i> Mua Nhanh</a>
+                            <a href="buy-cart" class="primary-btn sidebar-btn"><i class="fa fa-sliders"></i> Thanh Toán</a>
                             <a href="#" class="primary-btn sidebar-btn"><i class="fa fa-money"></i> Giá Trị Thương Mại</a>
                         </div>
+                        <div class="fb-like" data-href="" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+                        
                     </div>
                 </div>
             </div>
@@ -443,7 +514,85 @@
     <!-- Car Details Section End -->
 
     <!-- Footer Section Begin -->
-   <jsp:include page="/WEB-INF/views/_footer.jsp"></jsp:include>
+  <footer class="footer set-bg" data-setbg="../resources/img/footer-bg.jpg">
+        <div class="container">
+            <div class="footer__contact">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__contact__title">
+                            <h2>Liên lạc với chúng tôi ngay!</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__contact__option">
+                            <div class="option__item"><i class="fa fa-phone"></i> (+84) 865323066</div>
+                            <div class="option__item email"><i class="fa fa-envelope-o"></i><a href="https://mail.google.com/" class="email"> ngodinhhoang1999@gmail.com</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="home/home.jsp"><img src="resources/img/footer-logo.png" alt=""></a>
+                        </div>
+                        <p>Có câu hỏi nào không? Hãy cho chúng tôi biết tại cửa hàng tại 114/67 Dương Quảng Hàm, Phường 2,Q.Gò vấp,TPHCM hoặc gọi cho chúng tôi theo số (+84) 865323066</p>
+                        <div class="footer__social">
+                            <a href="https://facebook.com" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="https://twitter.com" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.google.com.vn" class="google"><i class="fa fa-google"></i></a>
+                            <a href="https://skype.com" class="skype"><i class="fa fa-skype"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3">
+                    <div class="footer__widget">
+                        <h5>Thông Tin</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Mua, tựa vào, bám vào</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Thanh Toán</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Đang Chuyển Hàng</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Trở Về</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <div class="footer__widget">
+                        <h5>Thông Tin</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Cửa Hiệu</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Ghế Kiểu</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i>Thiết Bị Tốt</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Giao Nhau</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__brand">
+                        <h5>Thương Hiệu Hàng Đầu</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Hiệu Abarth</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Hiệu Acura</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Hiệu Alfa Romeo</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Hiệu Audi</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Xe BMW</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Xe Chevrolet</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Xe Ferrari</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Xe Honda</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__copyright__text">
+                <p>Bản Quyền &copy;<script>document.write(new Date().getFullYear());</script> Bảo lưu mọi quyền | Mẫu này được thực hiện với <i class=" fa fa-heart " aria-hidden="true"></i> Của <a href="https://colorlib.com" target="_blank">Hoàng Bắp</a></p>
+            </div>
+           
+        </div>
+    </footer>
     <!-- Footer Section End -->
 
     <!-- Search Begin -->
@@ -460,6 +609,9 @@
     <script src="../resources/js/jquery.slicknav.js"></script>
     <script src="../resources/js/owl.carousel.min.js"></script>
     <script src="../resources/js/main.js"></script>
+     <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0&appId=2351872895118280&autoLogAppEvents=1" nonce="UcqqbWBH"></script>
+    
 </body>
 
 </html>

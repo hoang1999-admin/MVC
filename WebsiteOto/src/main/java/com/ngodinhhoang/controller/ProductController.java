@@ -41,6 +41,17 @@ public class ProductController {
 		model.addAttribute("latest_blog", this.productService.getProductLatest_Blog());
 		return "home/home";
 	}
+	@RequestMapping(value = "/car", method = RequestMethod.GET)
+	public String listProductcar(Model model) {
+		model.addAttribute("product", new Product());
+		model.addAttribute("hero", this.productService.getProductHero());
+		model.addAttribute("feature1", this.productService.getProductFeature1());
+		model.addAttribute("feature", this.productService.getProductFeature());
+		model.addAttribute("car1", this.productService.getProductCar1());
+		model.addAttribute("car2", this.productService.getProductCar2());
+		model.addAttribute("latest_blog", this.productService.getProductLatest_Blog());
+		return "car/car";
+	}
 
 	@RequestMapping("/product/id={id}")
 	public String Product(@PathVariable("id") int id, Model model) {
@@ -52,4 +63,5 @@ public class ProductController {
 	model.addAttribute("productblog", this.productService.getProductById(id));
 	return "blog_detail/blog_detail";
 	}
+	
 }

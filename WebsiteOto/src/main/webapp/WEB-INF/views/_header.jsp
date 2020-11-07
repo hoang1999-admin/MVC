@@ -60,10 +60,10 @@
                         </nav>
                         <div class="header__nav__widget">
                             <div class="header__nav__widget__btn">
-                                <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                <a href="<c:url value="/cart"/>"><i class="fa fa-cart-plus"></i><span><sup>${Total_Quanty_Cart}</sup></span></a>
                                 <a href="<c:url value='/search'/>" class="search-switch"><i class="fa fa-search"></i></a>
                             </div>
-                            <a href="<c:url value='/car_detail'/>" class="primary-btn">Thêm Xe</a>
+                            <a href="<c:url value='/car'/>" class="primary-btn">Thêm Xe</a>
                         </div>
                     </div>
                 </div>
