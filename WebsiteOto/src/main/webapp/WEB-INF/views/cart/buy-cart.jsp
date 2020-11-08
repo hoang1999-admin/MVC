@@ -82,8 +82,8 @@
 	<section class="clearfix content">
 		<div class="container my-3">
 			<div class="row">
-				<div class="col-md-6">
-					<form action="index.php?option=cart&cat=buy" method="post">
+				<div class="col-md-4">
+					<form action="${pageContext.request.contextPath}/checkout"  method="post">
 						<h3>Thông Tin Khách Hàng</h3>
 						<div class="form-group">
 							<label>Họ Tên Khách Hàng : </label> <input class="form-control"
@@ -125,11 +125,11 @@
 								placeholder="Địa Chỉ Người Nhận " />
 						</div>
 						<div class="form-group">
-							<button class="btn btn-success" type="submit" name="LUU">Lưu Đơn Hàng</button>
+							<button class="btn btn-success" type="submit" >Lưu Đơn Hàng</button>
 						</div>
 					</form>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-8">
 					<h1>Đơn Hàng</h1>
 			<form action="" method="post">
 				<table class="mt-3 mb-3" border="1px" cellspacing="0px" width="100%">
@@ -155,29 +155,33 @@
 						<td>
 							<fmt:formatNumber value ="${cart.value.product.price}"  type="number" maxIntegerDigits="14"/><span><sup>đ</sup></span> 
 						</td>
-						<td><input name="qty[]" type="number"
-							value="${Total_Quanty_Cart}" min="1" max="10" /></td>
+						<td><input  type="number"
+							value="<c:out value="${cart.value.quanty}"/>" min="1" max="10" /></td>
 						<td>
-							<fmt:formatNumber value ="${cart.value.product.price}"  type="number" maxIntegerDigits="14"/><span><sup>đ</sup></span> 
+							<fmt:formatNumber value ="${cart.value.total_price}"  type="number" maxIntegerDigits="14"/><span><sup>đ</sup></span> 
+						
 						</td>
-						<td class="text-center"><a class="btn-danger btn-sm"
+						
+						<td class="text-center">
+						<a class="btn-success btn-sm"
+							href="<c:url value="/AddCartMul/id=${ cart.key }/quanty=${Total_Quanty_Cart}"/>"
+							class=" text-success">Cập Nhật</a>
+						<a class="btn-danger btn-sm"
 							href="<c:url value="/Delete/${ cart.key }"/>"
-							class=" text-danger"><i class="fas fa-times"></i></a></td>
+							class=" text-danger">Xóa</a></td>
 					</tr>
 					 </c:forEach>
+					
 					<tr>
-						<td colspan="3">
+					
+						<td colspan="5" class="text-center">Tổng tiền:</td>
+						<td colspan="2" ><strong>
+								<fmt:formatNumber value ="${Total_Price_Cart}"  type="number" maxIntegerDigits="14"/><span><sup>đ</sup></span> 
 						
-							<a href="<c:url value="/EditCart/${ cart.key }"/>"	class="btn btn-success">Cập Nhật</a>
-							<a href="<c:url value="/Delete/${ cart.key }"/>"	class="btn btn-danger">Xóa Giỏ Hàng</a>
-						</td>
-						<td colspan="2" class="text-center">Tổng tiền:</td>
-						<td colspan="2"><strong>
-								 ${Total_Quanty_Cart} <sup>đ</sup>
 						</strong></td>
 
 					</tr>
-					
+				
 				</table>
 			</form>
 				</div>

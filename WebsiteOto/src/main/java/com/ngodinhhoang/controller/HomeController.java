@@ -29,7 +29,10 @@ public class HomeController {
 	public ModelAndView homepage() {
 		return new ModelAndView("home/home");
 	}
-
+	@RequestMapping(value = "/checkout")
+	public ModelAndView checkoutpage() {
+		return new ModelAndView("cart/checkout");
+	}
 	@RequestMapping(value = "/about")
 	public ModelAndView aboutpage() {
 		return new ModelAndView("about/about");

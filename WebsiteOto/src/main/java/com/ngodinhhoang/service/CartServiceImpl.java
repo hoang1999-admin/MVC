@@ -22,7 +22,7 @@ public class CartServiceImpl implements CartService {
 
 	@Transactional
 	public HashMap<Integer, Cart> AddCart(int id, HashMap<Integer, Cart> cart) {
-		// TODO Auto-generated method stub
+	
 		return cartDAO.AddCart(id, cart);
 	}
 
@@ -48,6 +48,11 @@ public class CartServiceImpl implements CartService {
 	@Transactional
 	public HashMap<Integer, Cart> AddCartMul(int id,int quanty, HashMap<Integer, Cart> cart){
 		return cartDAO.AddCartMul(id, quanty, cart);
+	}
+
+	@Override
+	public int Quanty(HashMap<Integer, Cart> cart) {
+		return cartDAO.Quanty(cart);
 	}
 
 }

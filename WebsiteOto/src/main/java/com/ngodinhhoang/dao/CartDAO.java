@@ -19,4 +19,7 @@ public interface CartDAO {
 	
 	public HashMap<Integer, Cart> AddCartMul(int id,int quanty, HashMap<Integer, Cart> cart);
 
+	public int Quanty(HashMap<Integer, Cart> cart);
+	
+
 }

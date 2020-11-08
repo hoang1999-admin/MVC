@@ -34,6 +34,7 @@ public class CartController {
 		cart = cartService.AddCart( id, cart);
 		session.setAttribute("CART", cart);
 		session.setAttribute("Total_Quanty_Cart",cartService.TotalQuanty(cart));
+		session.setAttribute("Quanty_Cart",cartService.Quanty(cart));
 		session.setAttribute("Total_Price_Cart", cartService.TotalPrice(cart));
 		return "redirect:"+request.getHeader("Referer");
 	}
@@ -51,7 +52,7 @@ public class CartController {
 		return "redirect:"+request.getHeader("Referer");
 	}
 	@SuppressWarnings("unchecked")
-	@RequestMapping(value = "EditCart/{id}/{quanty}", method = RequestMethod.GET)
+	@RequestMapping(value = "EditCart/id={id}/{quanty}", method = RequestMethod.GET)
 	public String EditCert(HttpServletRequest request,HttpSession session,@PathVariable int id,@PathVariable int quanty) {
 		HashMap<Integer,Cart> cart=(HashMap<Integer,Cart>)session.getAttribute("CART");
 		if(cart==null) {
@@ -64,7 +65,7 @@ public class CartController {
 		return "redirect:"+request.getHeader("Referer");
 	}
 	@SuppressWarnings("unchecked")
-	@RequestMapping(value = "AddCartMul/{id}/{quanty}", method = RequestMethod.GET)
+	@RequestMapping(value = "AddCartMul/id={id}/quanty={quanty}", method = RequestMethod.GET)
 	public String AddCartMul(HttpServletRequest request,HttpSession session,@PathVariable int id,@PathVariable int quanty) {
 		HashMap<Integer,Cart> cart=(HashMap<Integer,Cart>)session.getAttribute("CART");
 		if(cart==null) {

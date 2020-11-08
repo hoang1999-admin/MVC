@@ -12,8 +12,6 @@ import org.springframework.stereotype.Repository;
 import com.ngodinhhoang.model.Cart;
 import com.ngodinhhoang.model.Product;
 
-
-
 @Repository
 public class CartDAOImpl implements CartDAO {
 	@SuppressWarnings("unused")
@@ -63,13 +61,18 @@ public class CartDAOImpl implements CartDAO {
 		return cart;
 	}
 
-	public HashMap<Integer,Cart> DeleteCart(int id,HashMap<Integer,Cart> cart) {
-	  if(cart==null) 
-	  { return cart; } 
-	  if(cart.containsKey(id)) 
-	  { cart.remove(id); }
-	  
-	  return cart; }
+	public HashMap<Integer, Cart> DeleteCart(int id, HashMap<Integer, Cart> cart) {
+		if (cart == null) {
+			return cart;
+		}
+		if (cart.containsKey(id)) {
+			cart.remove(id);
+		}else {
+			cart.clear();
+		}
+
+		return cart;
+	}
 
 	public int TotalQuanty(HashMap<Integer, Cart> cart) {
 		int totalQuanty = 0;
@@ -88,12 +91,13 @@ public class CartDAOImpl implements CartDAO {
 
 		return totalPrice;
 	}
-	public HashMap<Integer, Cart> AddCartMul(int id,int quanty, HashMap<Integer, Cart> cart) {
+
+	public HashMap<Integer, Cart> AddCartMul(int id, int quanty, HashMap<Integer, Cart> cart) {
 		Cart itemCart = new Cart();
 		Product product = productDAO.getProductById(id);
 		if (product != null && cart.containsKey(id)) {
 			itemCart = cart.get(id);
-			itemCart.setQuanty(itemCart.getQuanty() + quanty);
+			itemCart.setQuanty(itemCart.getQuanty() + 1);
 			itemCart.setTotal_price(itemCart.getQuanty() * itemCart.getProduct().getPrice());
 		} else {
 			itemCart.setProduct(product);
@@ -102,6 +106,16 @@ public class CartDAOImpl implements CartDAO {
 		}
 		cart.put(id, itemCart);
 		return cart;
+	}
+
+	@Override
+	public int Quanty(HashMap<Integer, Cart> cart) {
+		int Quanty = 0;
+		for (Map.Entry<Integer, Cart> itemCart : cart.entrySet()) {
+			Quanty += itemCart.getValue().getQuanty();
+		}
+
+		return Quanty;
 	}
 
 }

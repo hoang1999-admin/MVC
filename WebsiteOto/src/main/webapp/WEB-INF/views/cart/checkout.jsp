@@ -37,6 +37,9 @@
 <link rel="stylesheet" type="text/css"
 	href="resources/css/slicknav.min.css">
 <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+<link rel="stylesheet" type="text/css" href="resources/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="resources/css/datatables.min.css">
+<link rel="stylesheet" type="text/css" href="resources/css/adminlte.min.css">
 </head>
 
 
@@ -72,70 +75,36 @@
 	</div>
 
 
-	<!-- Shoping Cart Section Begin -->
-	<section class="clearfix content">
-		<div class="container my-3">
 
-			
-			<h1>Giỏ Hàng</h1>
-			<form action="" method="post">
-				<table class="mt-3 mb-3" border="1px" cellspacing="0px" width="100%">
-					<tr>
-						<th>Mã</th>
-						<th style="width: 50px;">Hình</th>
-						<th>Tên Sản Phẩm</th>
-						<th>Giá</th>
-						<th>Số lượng</th>
-						<th>Thành tiền</th>
-						<th></th>
-					</tr>
-					<c:forEach var="cart" items="${CART}">
-					<tr>
-						<td>
-							${cart.value.product.id}
-						</td>
-						<td><img class="card-img-top"
-							src="${cart.value.product.img}"	class="cart-img-top" alt="Cinque Terre"></td>
-						<td>
-							${cart.value.product.title}
-						</td>
-						<td>
-							<fmt:formatNumber value ="${cart.value.product.price}"  type="number" maxIntegerDigits="14"/><span><sup>đ</sup></span> 
-						</td>
-						<td><input  type="number"
-							value="<c:out value="${cart.value.quanty}"/>" min="1" max="10" /></td>
-						<td>
-							<fmt:formatNumber value ="${cart.value.total_price}"  type="number" maxIntegerDigits="14"/><span><sup>đ</sup></span> 
-						
-						</td>
-						
-						<td class="text-center">
-						<a class="btn-danger btn-sm"
-							href="<c:url value="/AddCartMul/id=${ cart.key }/quanty=${Total_Quanty_Cart}"/>"
-							class=" text-danger"><i class="fas fa-times"></i>Cập Nhật</a>
-						<a class="btn-danger btn-sm"
-							href="<c:url value="/Delete/${ cart.key }"/>"
-							class=" text-danger"><i class="fas fa-times"></i>Xóa</a></td>
-					</tr>
-					 </c:forEach>
-					
-					<tr>
-					
-						<td colspan="5" class="text-center">Tổng tiền:</td>
-						<td colspan="2" ><strong>
-								<fmt:formatNumber value ="${Total_Price_Cart}"  type="number" maxIntegerDigits="14"/><span><sup>đ</sup></span> 
-						
-						</strong></td>
-
-					</tr>
-				
-				</table>
-			</form>
-			<a href="buy-cart" class="btn btn-success">Thanh Toán</a>
-			
-
+	<section>
+		<div class="modal" id="myModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title text-<?php echo $message['type'];?>">Thông
+							Báo</h5>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<strong class="text"></strong>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary"
+							data-dismiss="modal">Đóng</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
+	<script>
+		$(document).ready(function() {
+			$('#myModal').modal('show')
+		});
+	</script>
+
 
 
 	<!-- Footer Section Begin -->
@@ -158,6 +127,7 @@
 	<script src="resources/js/jquery.slicknav.js"></script>
 	<script src="resources/js/owl.carousel.min.js"></script>
 	<script src="resources/js/main.js"></script>
+	<script src="resources/js/jquery.min.js"></script>
 </body>
 
 </html>
