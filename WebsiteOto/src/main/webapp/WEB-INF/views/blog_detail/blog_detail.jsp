@@ -108,11 +108,10 @@
 						</nav>
 						<div class="header__nav__widget">
 							<div class="header__nav__widget__btn">
-								<a href="<c:url value="/cart"/>"><i class="fa fa-cart-plus"></i><span><sup>${Total_Quanty_Cart}</sup></span></a>
-								<a href="<c:url value='/search'/>" class="search-switch"><i
-									class="fa fa-search"></i></a>
+								<a href="${pageContext.request.contextPath}/cart"><i class="fa fa-cart-plus"></i><span><sup>${Total_Quanty_Cart}</sup></span></a>
+								<a href="${pageContext.request.contextPath}/search" class="search-switch"><i class="fa fa-search"></i></a>
 							</div>
-							<a href="<c:url value='/car_detail'/>" class="primary-btn">Thêm
+							<a href="${pageContext.request.contextPath}/car_detail" class="primary-btn">Thêm
 								Xe</a>
 						</div>
 					</div>

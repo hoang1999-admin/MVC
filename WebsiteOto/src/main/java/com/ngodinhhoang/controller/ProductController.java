@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+
 import com.ngodinhhoang.model.Product;
 import com.ngodinhhoang.service.ProductService;
 
@@ -52,7 +53,15 @@ public class ProductController {
 		model.addAttribute("latest_blog", this.productService.getProductLatest_Blog());
 		return "car/car";
 	}
-
+	@RequestMapping(value = "/blog", method = RequestMethod.GET)
+	public String listProductblog(Model model) {
+		model.addAttribute("product", new Product());
+		
+		model.addAttribute("car1", this.productService.getProductCar1());
+		model.addAttribute("car2", this.productService.getProductCar2());
+	
+		return "blog/blog";
+	}
 	@RequestMapping("/product/id={id}")
 	public String Product(@PathVariable("id") int id, Model model) {
 	model.addAttribute("product", this.productService.getProductById(id));

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
@@ -12,7 +13,7 @@
 <meta name="keywords" content="HVAC, unica, creative, html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>HVAC</title>
+<title>Đăng Nhập</title>
 
 <!-- Google Font -->
 <link
@@ -37,11 +38,7 @@
 <link rel="stylesheet" type="text/css"
 	href="resources/css/slicknav.min.css">
 <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-<link rel="stylesheet" type="text/css" href="resources/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="resources/css/datatables.min.css">
-<link rel="stylesheet" type="text/css" href="resources/css/adminlte.min.css">
 </head>
-
 
 <body>
 	<!-- Page Preloder -->
@@ -55,7 +52,6 @@
 	<jsp:include page="/WEB-INF/views/_header.jsp"></jsp:include>
 
 	<!-- Header Section End -->
-
 	<!-- Breadcrumb Begin -->
 	<div class="breadcrumb-option set-bg"
 		data-setbg="resources/img/hero-bg.jpg">
@@ -65,59 +61,40 @@
 					<div class="breadcrumb__text">
 						<h2>Porsche Cayenne Turbo S 2019</h2>
 						<div class="breadcrumb__links">
-							<a href="../home"><i class="fa fa-home"></i> Trang Chủ</a> <a
-								href="/car">Danh Sách Xe</a> <span>${product.getTitle()}</span>
+							<a href="../home.jsp"><i class="fa fa-home"></i> Trang Chủ</a> <a
+								href="#">Danh Sách Xe</a> <span>${product.getTitle()}</span>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+<div class="container " >
 
+   <form:form action="loginform"  commandName="loginForm">
+        <h2 class="form-heading">Log in</h2>
 
-<section>
-<h1 class="text-center"> Bạn Đã Lưu Đơn Hàng Thành Công !!!</h1>
-</section>
-	<section>
-		<div class="modal" id="myModal" tabindex="-1" role="dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title text">Thông
-							Báo</h5>
-						<button type="button" class="close" data-dismiss="modal"
-							aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<strong class="text"></strong>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary"
-							data-dismiss="modal">Đóng</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<script>
-		$(document).ready(function() {
-			$('#myModal').modal('show')
-		});
-	</script>
+        <div class="form-group ">
+            <span><FONT color="red"><form:errors path="user_name" /></FONT></span>
+            <form:input path="user_name" name="username" type="text" class="form-control mb-2" placeholder="Username"
+                   autofocus="true"/>	
+            <form:input path="password" name="password" type="password" class="form-control mb-2" placeholder="Password"/>
+            <span><form:errors path="password" /></span>
+            <input type="hidden" name="" value=""/>
 
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Đăng Nhập</button>
+            <h4 class="text-center"><a href="registrationform"><FONT color="blue">Create an account</FONT></a></h4>
+        </div>
+</form:form>
 
-
-	<!-- Footer Section Begin -->
+</div>
+<!-- Footer Section Begin -->
 	<jsp:include page="/WEB-INF/views/_footer.jsp"></jsp:include>
 	<!-- Footer Section End -->
 
 	<!-- Search Begin -->
 	<jsp:include page="/WEB-INF/views/home/Search.jsp"></jsp:include>
 	<!-- Search End -->
-
-
 
 	<!-- Js Plugins -->
 	<script src="resources/js/jquery-3.3.1.min.js"></script>
@@ -129,7 +106,6 @@
 	<script src="resources/js/jquery.slicknav.js"></script>
 	<script src="resources/js/owl.carousel.min.js"></script>
 	<script src="resources/js/main.js"></script>
-	<script src="resources/js/jquery.min.js"></script>
 </body>
 
 </html>

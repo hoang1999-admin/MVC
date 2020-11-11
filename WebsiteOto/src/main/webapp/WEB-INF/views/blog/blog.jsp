@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-     <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %> 
+    <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
  <fmt:setLocale value = "vi_VN" />
 <head>
@@ -44,8 +45,8 @@
                     <div class="breadcrumb__text">
                         <h2>Porsche Cayenne Turbo S 2019</h2>
                         <div class="breadcrumb__links">
-                            <a href="../home.jsp"><i class="fa fa-home"></i> Trang Chủ</a>
-                            <a href="../car.jsp">Nhật Kí</a>
+                            <a href="${pageContext.request.contextPath}/home"><i class="fa fa-home"></i> Trang Chủ</a>
+                            <a href="../car">Nhật Kí</a>
                             <span>Porsche cayenne turbo s</span>
                         </div>
                     </div>
@@ -60,11 +61,13 @@
             <div class="row">
                 <div class="col-lg-9">
                     <div class="row">
+                       <c:forEach var="product" items="${car1}">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="blog__item">
-                                <div class="blog__item__pic set-bg" data-setbg="resources/img/blog/blog-1.jpg">
+                                <div class="blog__item__pic set-bg" data-setbg="${product.getImg()}">
                                     <ul>
                                         <li>${product.getTitle()}</li>
+                                       
                                         <li>${product.getYear()}</li>
                                         <li>8 Bình luận</li>
                                     </ul>
@@ -75,9 +78,11 @@
                                 </div>
                             </div>
                         </div>
+                       </c:forEach>
+                       <c:forEach var="product" items="${car2}">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="blog__item">
-                                <div class="blog__item__pic set-bg" data-setbg="resources/img/blog/blog-2.jpg">
+                                <div class="blog__item__pic set-bg" data-setbg="${product.getImg()}">
                                     <ul>
                                         <li>${product.getTitle()}</li>
                                         <li>${product.getYear()}</li>
@@ -90,66 +95,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="blog__item">
-                                <div class="blog__item__pic set-bg" data-setbg="resources/img/blog/blog-3.jpg">
-                                    <ul>
-                                       <li>${product.getTitle()}</li>
-                                        <li>${product.getYear()}</li>
-                                        <li>Bình luận</li>
-                                    </ul>
-                                </div>
-                                <div class="blog__item__text">
-                                    <h5><a href="#">Quảng cáo ô tô đặc biệt</a></h5>
-                                    <p>${product.getDescription()}</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="blog__item">
-                                <div class="blog__item__pic set-bg" data-setbg="resources/img/blog/blog-4.jpg">
-                                    <ul>
-                                        <li>${product.getTitle()}</li>
-                                        <li>${product.getYear()}</li>
-                                        <li>Bình luận</li>
-                                    </ul>
-                                </div>
-                                <div class="blog__item__text">
-                                    <h5><a href="#">Sử dụng biểu ngữ để tăng lợi nhuận</a></h5>
-                                    <p>${product.getDescription()}</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="blog__item">
-                                <div class="blog__item__pic set-bg" data-setbg="resources/img/blog/blog-5.jpg">
-                                    <ul>
-                                        <li>${product.getTitle()}</li>
-                                        <li>${product.getYear()}</li>
-                                        <li>2 Bình luận</li>
-                                    </ul>
-                                </div>
-                                <div class="blog__item__text">
-                                    <h5><a href="#">3 lý do thông minh tại sao bạn nên chọn chúng tôi </a></h5>
-                                    <p>${product.getDescription()}</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="blog__item">
-                                <div class="blog__item__pic set-bg" data-setbg="resources/img/blog/blog-6.jpg">
-                                    <ul>
-                                        <li>${product.getTitle()}</li>
-                                        <li>${product.getYear()}</li>
-                                        <li>6 Bình luận</li>
-                                    </ul>
-                                </div>
-                                <div class="blog__item__text">
-                                    <h5><a href="#">Công cụ Tìm kiếm Tối ưu hóa </a></h5>
-                                    <p>${product.getDescription()}</p>
-                                </div>
-                            </div>
-                        </div>
+                       </c:forEach>
                     </div>
                     <div class="pagination__option">
                         <a href="#" class="active">1</a>
@@ -160,7 +106,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-9">
                     <div class="blog__sidebar">
-                        <form action="home/Search.jsp" class="blog__sidebar__search">
+                        <form action="/search.jsp" class="blog__sidebar__search">
                             <input type="text" placeholder="Tìm kiếm...">
                             <button type="submit"><i class="fa fa-search"></i></button>
                         </form>

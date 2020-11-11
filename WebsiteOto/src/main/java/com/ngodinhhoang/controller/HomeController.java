@@ -15,6 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
 
+	
 	@RequestMapping(value = "/")
 	public ModelAndView mainPage() {
 		return new ModelAndView("home/home");
@@ -24,6 +25,7 @@ public class HomeController {
 	public ModelAndView carpage() {
 		return new ModelAndView("car/car");
 	}
+	
 
 	@RequestMapping(value = "/home")
 	public ModelAndView homepage() {
@@ -73,4 +75,5 @@ public class HomeController {
 	public ModelAndView buy_cart() {
 		return new ModelAndView("cart/buy-cart");
 	}
+
 }
