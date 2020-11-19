@@ -99,4 +99,50 @@
         </div>
     </section>
       </c:forEach>
-   
+        
+
+   <script src="resources/ckeditor/ckeditor.js"></script>
+
+     <form action="save" method="post">
+       
+         <select onchange="createEditor( this.value );" id="languages">
+            <option value="en-gb">English (United Kingdom)</option>
+            <option value="vi">Vietnamese</option>
+            <option value="zh-cn">Chinese Simplified</option>
+            <option value="zh">Chinese Traditional</option>
+         </select>
+         
+         <textarea id="editor1" name="editor1"  cols="80" rows="10">
+               <p>Hello <strong>CKEditor</strong></p>
+         </textarea>
+         
+         <script>
+            var editor;
+             
+            function createEditor( languageCode ) {
+                if ( editor )
+                    editor.destroy();          
+       
+                // Thay thế <textarea id="editor1" với một CKEditor, sử dụng cấu hình mặc định
+                editor = CKEDITOR.replace( 'editor1', {
+                    language: languageCode,
+             
+                    on: {
+                        instanceReady: function() {
+                     
+                            // Chờ cho tới khi editor sẵn sàng để sét language.
+                            var languages = document.getElementById( 'languages' );
+                            languages.value = this.langCode;
+                            languages.disabled = false;
+                        }
+                    }
+                });
+            }          
+           
+            // Tại thời điểm bắt đầu, tải ngôn ngữ mặc định.
+            createEditor( '' );
+             
+         </script>
+         <input type="submit" value="Submit">
+      </form>
+

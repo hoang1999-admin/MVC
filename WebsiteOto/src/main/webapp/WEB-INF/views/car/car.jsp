@@ -91,7 +91,7 @@
 									<option data-display="Brand">Chọn nhãn hiệu</option>
 									<option value="">${product.getBrand()}</option>
 									<option value="">${product.getBrand()}</option>
-									<option value="">${product.getBrand()}</option> <
+									<option value="">${product.getBrand()}</option> 
 									<option value="">${product.getBrand()}</option>
 									<option value="">${product.getBrand()}</option>
 								</select> <select>
